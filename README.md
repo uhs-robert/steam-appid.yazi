@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  A <a href="https://github.com/sxyazi/yazi">Yazi</a> linemode plugin that resolves Steam AppIDs to game names. Browse your <code>steamapps</code> folder and see game names instead of raw IDs.
+  A <a href="https://github.com/sxyazi/yazi">Yazi</a> linemode plugin that resolves Steam AppIDs to game names.<br /><i>Browse your <code>steamapps</code> folder and see game names instead of raw IDs.</i>
 </p>
 
 <table>
@@ -45,7 +45,7 @@ Game names are cached in memory for the session, so repeated lookups don't hit d
 ## Installation
 
 ```sh
-ya pack -a uhs-robert/steam-appid
+ya pkg add uhs-robert/steam-appid
 ```
 
 ## Setup
@@ -75,7 +75,7 @@ All options are optional. Defaults shown below.
 | Option            | Type       | Default                          | Description                                                                                      |
 | ----------------- | ---------- | -------------------------------- | ------------------------------------------------------------------------------------------------ |
 | `steamapps_paths` | `string[]` | `~/.local/share/Steam/steamapps` | Paths to search for `appmanifest_*.acf` files. Add extra entries for additional Steam libraries. |
-| `icon`            | `string`   | `󰓓`                              | Icon prepended to the game name. Uses the Nerd Font steam icon. Set to `""` to disable.          |
+| `icon`            | `string`   | Nerd font `Steam` icon           | Icon prepended to the game name. Set to `""` to disable.                                         |
 
 ### Handling Multiple Steam libraries
 
