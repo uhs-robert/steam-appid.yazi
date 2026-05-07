@@ -28,6 +28,14 @@
   <a href="./NEWS.md">✨ What's New / 🚨 Breaking Changes</a>
 </p>
 
+## No More AppID Lookups
+
+Steam stores game data in folders and files named by numeric AppID like `appmanifest_1091500.acf`, `1091500/`, etc. These IDs are meaningless at a glance.
+
+When you're modding, you often need to navigate `steamapps/compatdata/` to find Proton prefixes, `steamapps/downloading/` to check active downloads, or the main `steamapps/` folder to inspect or edit game files. But you have to cross-reference IDs against a database or SteamDB every time.
+
+Not anymore. This plugin resolves those IDs to game names inline, so you can navigate your Steam folders the same way you'd navigate any other directory: by name.
+
 ## How it works
 
 The plugin reads `appmanifest_<id>.acf` files from your `steamapps` directory and displays the `name` field inline. It activates for:
